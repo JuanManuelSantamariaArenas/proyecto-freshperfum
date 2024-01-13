@@ -1,0 +1,31 @@
+Proyecto/
+|-- src/
+|   |-- app/
+|   |   |-- __init__.py
+|   |   |-- module1/
+|   |   |   |-- __init__.py
+|   |   |   |-- module1_file1.py
+|   |   |   |-- module1_file2.py
+|   |   |-- module2/
+|   |       |-- __init__.py
+|   |       |-- module2_file1.py
+|   |-- scripts/
+|   |   |-- script1.py
+|   |   |-- script2.py
+|   |-- utils/
+|   |   |-- __init__.py
+|   |   |-- utility1.py
+|   |   |-- utility2.py
+|   |-- main.py
+|-- tests/
+|   |-- app/
+|   |   |-- module1/
+|   |   |   |-- test_module1_file1.py
+|   |   |   |-- test_module1_file2.py
+|   |   |-- module2/
+|   |       |-- test_module2_file1.py
+|-- docs/
+|   |-- ...
+|-- README.md
+|-- requirements.txt
+|-- .gitignore
