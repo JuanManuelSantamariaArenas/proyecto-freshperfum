@@ -53,3 +53,7 @@ class Bodega:
             self.sucursales = sucursales
             self.empleados = empleados
         return
+
+    def guardar_historial(self):
+        with open("data\historial.txt", "wb") as file:
+            pickle.dump(self, file)
