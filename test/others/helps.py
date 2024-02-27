@@ -8,7 +8,7 @@ def existe_empleado(cedula) -> bool:
         print("NO")
 
 
-existe_empleado(1)
+existe_empleado("Juan")
 existe_empleado(2)
 existe_empleado(3)
 existe_empleado(5)

@@ -9,8 +9,7 @@ def migrar_usuarios():
         usuarios_finales = [linea.split(",") for linea in datos_iniciales]
         del usuarios_finales[0]
         usuarios = {
-            int(usuario[0]): Usuario(usuario[0], usuario[1])
-            for usuario in usuarios_finales
+            usuario[0]: Usuario(usuario[0], usuario[1]) for usuario in usuarios_finales
         }
     return usuarios
 

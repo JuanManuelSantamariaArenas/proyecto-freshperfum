@@ -36,12 +36,16 @@ class Console:
             self.autenticacion = True
             while True:
                 print("BIENVENIDO\n")
-                usuario = print("USUARIO: ")
-                contraseña = print("CONTRASEÑA: ")
+                usuario = input("USUARIO: ")
+                contraseña = input("CONTRASEÑA: ")
                 if self.bodega.existe_usuario(usuario):
-                    contraseña = self.bodega.usuarios[usuario].contraseña
+                    contraseña_usuario = self.bodega.usuarios[usuario].contraseña
+                    if contraseña_usuario == contraseña:
+                        break
+                    else:
+                        print(f"\n * INFO: USUARIO O CONTRASEÑA NO ES VALIDA\n")
                 else:
-                    print(f"\n * INFO: USUARIO O CONTRASEÑA NO ES VALIDA")
+                    print(f"\n * INFO: USUARIO O CONTRASEÑA NO ES VALIDA\n")
 
     # MENU # 1
     def mostrar_menu_principal(self):
